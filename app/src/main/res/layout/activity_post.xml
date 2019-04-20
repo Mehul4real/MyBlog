@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Post">
+
+    <ImageButton
+        android:id="@+id/imgSelect"
+        android:layout_width="match_parent"
+        android:layout_height="309dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="21dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/add_btn" />
+
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="371dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/input_outline"
+        android:ems="10"
+        android:hint="Post Title..."
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:singleLine="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgSelect" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <EditText
+        android:id="@+id/desc"
+        android:layout_width="371dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/input_outline"
+        android:ems="10"
+        android:hint="Post Description..."
+        android:inputType="textMultiLine"
+        android:padding="15dp"
+        android:singleLine="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="Submit Post"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="161dp" />
+</android.support.constraint.ConstraintLayout>
